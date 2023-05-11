@@ -16,7 +16,6 @@
   --mainSpacing: 0.2rem;
 }
 
-
 /* 
 -------------
 -------------
@@ -32,10 +31,9 @@
 }
 
 body {
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   color: var(--mainBlack);
   line-height: 1.5rem;
-  ;
 }
 
 a {
@@ -85,7 +83,6 @@ p {
   color: var(--mainWhite);
 }
 
-
 /* 
 -------------
 -------------
@@ -94,16 +91,16 @@ p {
 -------------
 */
 
-.main-navbar{
+.main-navbar {
   background: var(--darkGrey);
   padding: 0 2rem;
 }
 
-.main-navbar li{
+.main-navbar li {
   list-style: none;
 }
 
-.main-navbar a{
+.main-navbar a {
   display: block;
   text-transform: capitalize;
   padding: 1rem 0;
@@ -111,19 +108,45 @@ p {
   letter-spacing: var(--mainSpacing);
 }
 
-.main-navbar a:hover{
+.main-navbar a:hover {
   transition: var(--mainTransition);
   color: var(--mainBlack);
 }
 
 @media screen and (min-width: 992px) {
-  .main-navbar ul{
+  .main-navbar ul {
     max-width: 1170px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
-  .main-navbar{
+  .main-navbar {
     text-align: center;
   }
+}
+
+/* 
+-------------
+-------------
+  Hero
+-------------
+-------------
+*/
+
+.hero-header{
+  min-height: 100vh;
+  background: var(--primary-color);
+  color: var(--mainWhite);
+  display: grid;
+
+  /*---- Centering the whole container ----*/
+  /* Centering Horizontally (across main-axis) */
+  justify-content: center;
+  /* Centering Vertically inside "the hero-header block" */
+  align-items: center;
+}
+
+.hero-banner{
+  /* Aligning the text in center */
+  /* text-align: center; */
 }
