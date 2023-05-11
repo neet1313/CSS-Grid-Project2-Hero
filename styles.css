@@ -133,7 +133,7 @@ p {
 -------------
 */
 
-.hero-header{
+.hero-header {
   min-height: 100vh;
   background: var(--primary-color);
   color: var(--mainWhite);
@@ -146,7 +146,23 @@ p {
   align-items: center;
 }
 
-.hero-banner{
+.hero-banner {
   /* Aligning the text in center */
   /* text-align: center; */
+  text-align: center;
+}
+.hero-banner p {
+  /* Since paragraph is block level by default it needs to
+  be changed to inline-block to be centered */
+  display: inline-block;
+  width: 80%;
+  max-width: 560px;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header {
+    background: linear-gradient(rgba(241, 80, 37, 0.75), rgba(0, 0, 0, 0.75)),
+      url("./image-2.jpeg") center/cover fixed no-repeat;
+  }
 }
