@@ -1,0 +1,129 @@
+/* 
+-------------
+-------------
+  VARIABLES
+-------------
+-------------
+*/
+
+:root {
+  --primary-color: #f15025;
+  --mainBlack: #222;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --darkGrey: #afafaf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.2rem;
+}
+
+
+/* 
+-------------
+-------------
+  Global styles
+-------------
+-------------
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  color: var(--mainBlack);
+  line-height: 1.5rem;
+  ;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 1.25rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 2;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  border: 3px solid var(--primary-color);
+  color: var(--primary-color);
+  margin: 3rem;
+}
+
+.btn:hover {
+  transition: var(--mainTransition);
+  background: var(--primary-color);
+  color: var(--mainWhite);
+}
+
+
+/* 
+-------------
+-------------
+  Main Navbar
+-------------
+-------------
+*/
+
+.main-navbar{
+  background: var(--darkGrey);
+  padding: 0 2rem;
+}
+
+.main-navbar li{
+  list-style: none;
+}
+
+.main-navbar a{
+  display: block;
+  text-transform: capitalize;
+  padding: 1rem 0;
+  color: var(--primary-color);
+  letter-spacing: var(--mainSpacing);
+}
+
+.main-navbar a:hover{
+  transition: var(--mainTransition);
+  color: var(--mainBlack);
+}
+
+@media screen and (min-width: 992px) {
+  .main-navbar ul{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main-navbar{
+    text-align: center;
+  }
+}
